@@ -1,1 +1,46 @@
+body {
+    background:linear-gradient(to bottom right, black, grey);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.Calculator {
+    background-color:rgb(187, 168, 168);
+    width:24rem;
+    height:35rem;
+    padding:1rem;
+    border-radius:2rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.25rem;
+}
+.screen {
+    background-color:black;
+    height:24%;
+    width:100%;
+    border-radius:0.5rem;
+    margin-bottom:1rem;
+}
+.screen > p {
+    color:whitesmoke;
+}
+button {
+    background-color:rgb(41, 45, 49);
+    color:whitesmoke;
+    height:5rem;
+    border-radius:1.5rem;
+    font-size:2.5rem;
+}
+#plus-sign, #minus-sign, #multiplication-sign, #division-sign, #equals-sign {
+    background-color:rgb(255, 102, 0);
+}
+.row-one,.row-two,.row-three,.row-four,.row-five {
+    gap:0.75rem;
+    display:grid;
+    grid-template-columns:repeat(4,1fr)
+}
+#help {
+    font-size:1.5rem;
+}
 
