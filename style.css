@@ -15,16 +15,37 @@ body {
     flex-direction:column;
     gap:0.25rem;
 }
+
 .screen {
-    background-color:black;
-    height:24%;
-    width:100%;
-    border-radius:0.5rem;
-    margin-bottom:1rem;
+    background-color: black;
+    height: 24%;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end; /* Keeps text aligned to the right */
+    align-items: center;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    overflow-x: auto;         /* Allows horizontal scrolling for long formulas */
+    white-space: nowrap;      /* Prevents text from breaking into two lines */
 }
+
 .screen > p {
-    color:whitesmoke;
+    color: whitesmoke;
+    font-size: 2.2rem;        /* Slightly smaller text so more numbers fit on screen */
+    margin: 0;
 }
+
+/* Optional: Hides the scrollbar graphics for a cleaner look */
+.screen::-webkit-scrollbar {
+    display: none;
+}
+.screen {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
 button {
     background-color:rgb(41, 45, 49);
     color:whitesmoke;
